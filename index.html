@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatGPT Style Chatbot</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <h2>ChatGPT</h2>
+
+        <button id="new-chat" type="button">
+            ＋ New chat
+        </button>
+
+        <p class="history-heading">Recent</p>
+
+        <div id="history"></div>
+
+        <button id="theme" type="button">
+            ☀ Change theme
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header>
+            <button id="menu" type="button" aria-label="Open sidebar">
+                ☰
+            </button>
+
+            <span>ChatGPT</span>
+        </header>
+
+
+        <!-- Chat Area -->
+        <section class="chat" id="chat">
+
+            <!-- Welcome Screen -->
+            <div class="welcome" id="welcome">
+
+                <h1>What can I help with?</h1>
+
+                <p>Ask me a simple question to get started.</p>
+
+                <!-- Suggested Prompts -->
+                <div class="suggestions">
+
+                    <button type="button">
+                        👋 Say hello
+                    </button>
+
+                    <button type="button">
+                        😊 How are you?
+                    </button>
+
+                    <button type="button">
+                        💻 Explain HTML
+                    </button>
+
+                    <button type="button">
+                        🎨 Explain CSS
+                    </button>
+
+                    <button type="button">
+                        ⚡ Explain JavaScript
+                    </button>
+
+                    <button type="button">
+                        😄 Tell me a joke
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- User and chatbot messages will appear here -->
+
+        </section>
+
+
+        <!-- Message Input Area -->
+        <footer>
+
+            <form id="form">
+
+                <textarea
+                    id="input"
+                    placeholder="Message ChatGPT..."
+                    rows="1"
+                    aria-label="Type your message"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    id="send"
+                    aria-label="Send message"
+                >
+                    ↑
+                </button>
+
+            </form>
+
+            <p>ChatGPT-style demo · Simple replies only</p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
